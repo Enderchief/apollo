@@ -3,7 +3,7 @@ version = "0.1.1"
 description = "a simple type safe validator"
 
 licences = ["MIT"]
-repository = { type = "github", user = "endercheif", repo = "apollo" }
+repository = { type = "github", user = "enderchief", repo = "apollo" }
 
 [javascript]
 typescript_declarations = true
