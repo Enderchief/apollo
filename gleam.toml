@@ -1,0 +1,15 @@
+name = "apollo"
+version = "0.1.0"
+description = "a simple type safe validator"
+
+licences = ["MIT"]
+repository = { type = "github", user = "endercheif", repo = "apollo" }
+
+[javascript]
+typescript_declarations = true
+
+[dependencies]
+gleam_stdlib = "~> 0.30"
+
+[dev-dependencies]
+gleeunit = "~> 0.10"
