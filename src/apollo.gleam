@@ -7,7 +7,7 @@ import apollo/t
 ///     // type of `my_id` is `Id`
 @external(erlang, "ffi_apollo", "validate")
 @external(javascript, "./ffi_apollo.mjs", "validate")
-pub fn validate(schema: t.Schema(type_), obj: unknown) -> Result(type_, Nil)
+pub fn validate(schema: t.Schema(type_), obj: unknown) -> Result(type_, String)
 
 /// Returns a schema to be used by `validate`. Takes in a type constructor and a list of key, value pairs.
 /// # Example
