@@ -12,15 +12,12 @@ type Basic {
 }
 
 pub fn type_basic_test() {
-  typed(
-    Basic,
-    [
-      #("str_f", t.string()),
-      #("float_f", t.float()),
-      #("int_f", t.int()),
-      #("bool_f", t.bool()),
-    ],
-  )
+  typed(Basic, [
+    #("str_f", t.string()),
+    #("float_f", t.float()),
+    #("int_f", t.int()),
+    #("bool_f", t.bool()),
+  ])
   |> validate(#(
     #("str_f", "abc"),
     #("float_f", 1.5),
@@ -31,15 +28,12 @@ pub fn type_basic_test() {
 }
 
 pub fn type_err_basic_test() {
-  typed(
-    Basic,
-    [
-      #("str_f", t.string()),
-      #("float_f", t.float()),
-      #("int_f", t.int()),
-      #("bool_f", t.bool()),
-    ],
-  )
+  typed(Basic, [
+    #("str_f", t.string()),
+    #("float_f", t.float()),
+    #("int_f", t.int()),
+    #("bool_f", t.bool()),
+  ])
   |> validate(#(
     #("str_f", "abc"),
     #("float_f", "a string"),

@@ -1,4 +1,4 @@
-/// Used when making custon filters to check the type of a value
+/// Used when making custom filters to check the type of a value
 pub type AnyType {
   IntT(Int)
   StringT(String)
